@@ -1,45 +1,17 @@
 #include <stdio.h>
+#include <locale.h>
 
-
-void Replace(char* ptr)
+struct Student
 {
-	int k = 0;
-	int temp;
-	while (ptr[k] != '\0')
-	{
-		if (ptr[k] == (char)39)
-		{
-			temp = (int)ptr[++k];
-			ptr[--k] = (temp / 10)+48;
-			ptr[++k] = (temp % 10)+48;
-			ptr[++k] = ' ';
-		}
-		else
-		{
-			k++;
-		}
-	}
+	char surname[20];
+	int bookNumber;
+	char faculti[10];
+	char group[10];
+};
 
-	k = 0;
-
-	while (ptr[k] != '\0')
-	{
-		if (ptr[k] == ' ')
-		{
-			ptr[k] = ptr[k+1];
-		}
-		else
-		{
-			k++;
-		}
-	}
-}
-
-void main()
+void main(void)
 {
-	char string[] = "a'4'aaxo['8'[pxx\0";
-	char* ptr = string;
-	Replace(ptr);
-	printf(string);
-	scanf_s(string);
+	setlocale(LC_ALL, "Rus");
+	struct Student first = { "Рехтин", 123456, "АВТФ", "АВТ-341" };
+	printf("Фамилия: %s \t Номер билета: %d \t Факультет: %s \t Группа: %s \n", first.surname, first.bookNumber, first.faculti, first.group);
 }
