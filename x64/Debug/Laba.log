@@ -1,2 +1,44 @@
 ﻿  Hello.c
-  Laba.vcxproj -> C:\Users\Ledozvezd\source\repos\Laba\x64\Debug\Laba.exe
+C:\Users\Ledozvezd\source\repos\Laba\Hello.c(7,1): warning C4005: _CRT_SECURE_NO_WARNINGS: изменение макроопределения
+C:\Users\Ledozvezd\source\repos\Laba\Hello.c(7,1): message : "_CRT_SECURE_NO_WARNINGS" ранее объявлен в командной строке
+C:\Users\Ledozvezd\source\repos\Laba\Hello.c(26,11): warning C4473: "scanf_s": передано недостаточно аргументов для строки формата
+C:\Users\Ledozvezd\source\repos\Laba\Hello.c(26,11): message : заполнители и их параметры ожидают переменное число аргументов в количестве 2, но было предоставлено 1
+C:\Users\Ledozvezd\source\repos\Laba\Hello.c(26,11): message : отсутствующий вариативный аргумент "2" требуется для строки форматирования "%s"
+C:\Users\Ledozvezd\source\repos\Laba\Hello.c(26,11): message : этот аргумент используется в качестве размера буфера
+C:\Users\Ledozvezd\source\repos\Laba\Hello.c(30,11): warning C4473: "scanf_s": передано недостаточно аргументов для строки формата
+C:\Users\Ledozvezd\source\repos\Laba\Hello.c(30,11): message : заполнители и их параметры ожидают переменное число аргументов в количестве 2, но было предоставлено 1
+C:\Users\Ledozvezd\source\repos\Laba\Hello.c(30,11): message : отсутствующий вариативный аргумент "2" требуется для строки форматирования "%s"
+C:\Users\Ledozvezd\source\repos\Laba\Hello.c(30,11): message : этот аргумент используется в качестве размера буфера
+C:\Users\Ledozvezd\source\repos\Laba\Hello.c(32,11): warning C4473: "scanf_s": передано недостаточно аргументов для строки формата
+C:\Users\Ledozvezd\source\repos\Laba\Hello.c(32,11): message : заполнители и их параметры ожидают переменное число аргументов в количестве 2, но было предоставлено 1
+C:\Users\Ledozvezd\source\repos\Laba\Hello.c(32,11): message : отсутствующий вариативный аргумент "2" требуется для строки форматирования "%s"
+C:\Users\Ledozvezd\source\repos\Laba\Hello.c(32,11): message : этот аргумент используется в качестве размера буфера
+C:\Users\Ledozvezd\source\repos\Laba\Hello.c(44,15): warning C4133: функция: несовместимые типы - из "FILE *" в "const char *"
+C:\Users\Ledozvezd\source\repos\Laba\Hello.c(44,35): warning C4020: fopen: слишком много фактических параметров
+C:\Users\Ledozvezd\source\repos\Laba\Hello.c(47,3): warning C4013: fprint: нет определения; предполагается "extern" с возвратом типа "int"
+C:\Users\Ledozvezd\source\repos\Laba\Hello.c(57,22): warning C4477: "fscanf": в строке форматирования "%s" требуется аргумент типа "char *", но вариативный аргумент "2" имеет тип "int (*)[50]"
+C:\Users\Ledozvezd\source\repos\Laba\Hello.c(57,22): warning C4477: "fscanf": в строке форматирования "%d" требуется аргумент типа "int *", но вариативный аргумент "4" имеет тип "char *"
+C:\Users\Ledozvezd\source\repos\Laba\Hello.c(57,22): message : рекомендуется использовать "%hhd" в строке форматирования
+C:\Users\Ledozvezd\source\repos\Laba\Hello.c(72,10): warning C4477: "printf": в строке форматирования "%d" требуется аргумент типа "int", но вариативный аргумент "2" имеет тип "int *"
+C:\Users\Ledozvezd\source\repos\Laba\Hello.c(72,10): warning C4313: printf: конфликт "%d" в строке формата с аргументом 2 типа "int *"
+C:\Users\Ledozvezd\source\repos\Laba\Hello.c(78,17): warning C4047: инициализация: "int" отличается по уровням косвенного обращения от "char [2]"
+C:\Users\Ledozvezd\source\repos\Laba\Hello.c(103,11): warning C4477: "printf": в строке форматирования "%d" требуется аргумент типа "int", но вариативный аргумент "2" имеет тип "int *"
+C:\Users\Ledozvezd\source\repos\Laba\Hello.c(103,11): warning C4313: printf: конфликт "%d" в строке формата с аргументом 2 типа "int *"
+C:\Users\Ledozvezd\source\repos\Laba\Hello.c(116,29): warning C4047: ==: "int [50]" отличается по уровням косвенного обращения от "int"
+C:\Users\Ledozvezd\source\repos\Laba\Hello.c(118,11): warning C4477: "printf": в строке форматирования "%d" требуется аргумент типа "int", но вариативный аргумент "2" имеет тип "int *"
+C:\Users\Ledozvezd\source\repos\Laba\Hello.c(118,11): warning C4313: printf: конфликт "%d" в строке формата с аргументом 2 типа "int *"
+C:\Users\Ledozvezd\source\repos\Laba\Hello.c(149,11): warning C4473: "scanf_s": передано недостаточно аргументов для строки формата
+C:\Users\Ledozvezd\source\repos\Laba\Hello.c(149,11): message : заполнители и их параметры ожидают переменное число аргументов в количестве 2, но было предоставлено 1
+C:\Users\Ledozvezd\source\repos\Laba\Hello.c(149,11): message : отсутствующий вариативный аргумент "2" требуется для строки форматирования "%s"
+C:\Users\Ledozvezd\source\repos\Laba\Hello.c(149,11): message : этот аргумент используется в качестве размера буфера
+C:\Users\Ledozvezd\source\repos\Laba\Hello.c(153,11): warning C4473: "scanf_s": передано недостаточно аргументов для строки формата
+C:\Users\Ledozvezd\source\repos\Laba\Hello.c(153,11): message : заполнители и их параметры ожидают переменное число аргументов в количестве 2, но было предоставлено 1
+C:\Users\Ledozvezd\source\repos\Laba\Hello.c(153,11): message : отсутствующий вариативный аргумент "2" требуется для строки форматирования "%s"
+C:\Users\Ledozvezd\source\repos\Laba\Hello.c(153,11): message : этот аргумент используется в качестве размера буфера
+C:\Users\Ledozvezd\source\repos\Laba\Hello.c(155,11): warning C4473: "scanf_s": передано недостаточно аргументов для строки формата
+C:\Users\Ledozvezd\source\repos\Laba\Hello.c(155,11): message : заполнители и их параметры ожидают переменное число аргументов в количестве 2, но было предоставлено 1
+C:\Users\Ledozvezd\source\repos\Laba\Hello.c(155,11): message : отсутствующий вариативный аргумент "2" требуется для строки форматирования "%s"
+C:\Users\Ledozvezd\source\repos\Laba\Hello.c(155,11): message : этот аргумент используется в качестве размера буфера
+C:\Users\Ledozvezd\source\repos\Laba\Hello.c(165,17): warning C4101: students: неиспользованная локальная переменная
+Hello.obj : error LNK2019: ссылка на неразрешенный внешний символ fprint в функции SaveTable.
+C:\Users\Ledozvezd\source\repos\Laba\x64\Debug\Laba.exe : fatal error LNK1120: неразрешенных внешних элементов: 1
