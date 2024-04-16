@@ -1,6 +1,6 @@
 ﻿  Hello.cpp
-C:\Users\Ledozvezd\source\repos\Laba\Hello.cpp(20,13): warning C4473: "scanf_s": передано недостаточно аргументов для строки формата
-C:\Users\Ledozvezd\source\repos\Laba\Hello.cpp(20,13): message : заполнители и их параметры ожидают переменное число аргументов в количестве 2, но было предоставлено 1
-C:\Users\Ledozvezd\source\repos\Laba\Hello.cpp(20,13): message : отсутствующий вариативный аргумент "2" требуется для строки форматирования "%s"
-C:\Users\Ledozvezd\source\repos\Laba\Hello.cpp(20,13): message : этот аргумент используется в качестве размера буфера
+C:\Users\Ledozvezd\source\repos\Laba\Hello.cpp(99,13): warning C4473: "scanf_s": передано недостаточно аргументов для строки формата
+C:\Users\Ledozvezd\source\repos\Laba\Hello.cpp(99,13): message : заполнители и их параметры ожидают переменное число аргументов в количестве 2, но было предоставлено 1
+C:\Users\Ledozvezd\source\repos\Laba\Hello.cpp(99,13): message : отсутствующий вариативный аргумент "2" требуется для строки форматирования "%s"
+C:\Users\Ledozvezd\source\repos\Laba\Hello.cpp(99,13): message : этот аргумент используется в качестве размера буфера
   Laba.vcxproj -> C:\Users\Ledozvezd\source\repos\Laba\x64\Debug\Laba.exe
