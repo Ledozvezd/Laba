@@ -41,5 +41,5 @@ void main()
 	char* ptr = string;
 	Replace(ptr);
 	printf(string);
-	scanf_s(string);
+	//scanf_s(string);
 }
