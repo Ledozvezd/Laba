@@ -27,8 +27,6 @@ int find(char c[]) {
     if (b == -1) return 0; // Защита " от дурака" , нет парных скобок
     return max;
 }
-
-//Почини код на Си :
 void findAndRemoveBrackets(char** strings)
 {
     int j,i;
@@ -76,16 +74,21 @@ void findAndRemoveBrackets(char** strings)
                 
                 if (j == strlen(strings[0]) - 3)
                 {
+                    strncpy_s(strings[p], j - i + 1, &strings[0][i-1], j - i);
                     memmove(&strings[0][i-1], &strings[0][i] + (j-i+1), strlen(strings[0]) - (j-i+2));
 
                     return;
                 }
-                memmove(&strings[0][i], &strings[0][j + 1], strlen(strings[0]) - (j - i + 1));
+                else
+                {
+                    strncpy_s(strings[p], j - i, &strings[0][i + 1], j - i - 1);
+                    memmove(&strings[0][i], &strings[0][j + 1], strlen(strings[0]) - (j - i + 1));
+                }
+                //memmove(&strings[0][i], &strings[0][j + 1], strlen(strings[0]) - (j - i + 1));
             }
         }
     }
-    p--;
-    strncpy_s(strings[p], 2, &strings[p][0], 1);
+  
 }
 
 
@@ -93,7 +96,7 @@ int main()
 {
     char strings[100][80];
     char** pc;
-    char empty[] = "             ";
+    //char empty[] = "             ";
 
     pc = (char**)malloc(100 * sizeof(char*));
     scanf_s("%s", strings[0]);//qqq(ww(ee(r)))yy

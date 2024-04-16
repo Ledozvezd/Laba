@@ -1,0 +1,10 @@
+﻿  Hello.cpp
+C:\Users\Ledozvezd\SibRabbit\Laba\Hello.cpp(102,13): warning C4473: "scanf_s": передано недостаточно аргументов для строки формата
+  C:\Users\Ledozvezd\SibRabbit\Laba\Hello.cpp(102,13):
+  заполнители и их параметры ожидают переменное число аргументов в количестве 2, но было предоставлено 1
+  C:\Users\Ledozvezd\SibRabbit\Laba\Hello.cpp(102,13):
+  отсутствующий вариативный аргумент "2" требуется для строки форматирования "%s"
+  C:\Users\Ledozvezd\SibRabbit\Laba\Hello.cpp(102,13):
+  этот аргумент используется в качестве размера буфера
+  
+  Laba.vcxproj -> C:\Users\Ledozvezd\SibRabbit\Laba\x64\Debug\Laba.exe
