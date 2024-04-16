@@ -38,7 +38,7 @@ void Add(struct Student* student)
 
 }
 
-void SaveTable(struct Student* student)
+/*void SaveTable(struct Student* student)
 {
 	FILE* file = fopen(file, "output.txt", "w");;
 	for (int i = 0; i < amount; i++)
@@ -60,7 +60,7 @@ void LoadTable(struct Student* student)
 
 	fclose(file);
 	printf("Table load from file.\n");
-}
+}*/
 
 
 void ShowTable(struct Student * student)
@@ -162,5 +162,7 @@ void ChangeParam(struct Student * student, int index)
 void main(void)
 {
 	struct Student students[100];
+	char* prt = students;
+	Add(&students);
 
 }
