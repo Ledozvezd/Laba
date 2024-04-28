@@ -1,13 +1,16 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\Ledozvezd\\SibRabbit\\Laba\\",
+  "WorkspaceRootPath": "C:\\Users\\Ledozvezd\\source\\repos\\Laba\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{15655F98-F946-4A9A-A028-D2FD3304DBBF}|Laba.vcxproj|C:\\Users\\Ledozvezd\\SibRabbit\\Laba\\Hello.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{15655F98-F946-4A9A-A028-D2FD3304DBBF}|Laba.vcxproj|solutionrelative:Hello.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{15655F98-F946-4A9A-A028-D2FD3304DBBF}|Laba.vcxproj|C:\\Users\\Ledozvezd\\source\\repos\\Laba\\Hello.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{15655F98-F946-4A9A-A028-D2FD3304DBBF}|Laba.vcxproj|solutionrelative:Hello.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{15655F98-F946-4A9A-A028-D2FD3304DBBF}|Laba.vcxproj|C:\\PROGRAM FILES (X86)\\WINDOWS KITS\\10\\INCLUDE\\10.0.22621.0\\UCRT\\STDIO.H||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Ledozvezd\\Downloads\\Telegram Desktop\\main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     }
   ],
   "DocumentGroupContainers": [
@@ -24,25 +27,38 @@
               "DocumentIndex": 1,
               "Title": "stdio.h",
               "DocumentMoniker": "C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.22621.0\\ucrt\\stdio.h",
-              "RelativeDocumentMoniker": "..\\..\\..\\..\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.22621.0\\ucrt\\stdio.h",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.22621.0\\ucrt\\stdio.h",
               "ToolTip": "C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.22621.0\\ucrt\\stdio.h",
-              "RelativeToolTip": "..\\..\\..\\..\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.22621.0\\ucrt\\stdio.h",
-              "ViewState": "AQIAADkEAAAAAAAAAAAcwEoEAAAAAAAA",
+              "RelativeToolTip": "..\\..\\..\\..\\..\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.22621.0\\ucrt\\stdio.h",
+              "ViewState": "AQIAACsEAAAAAAAAAIAwwEoEAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2024-04-16T02:25:22.902Z",
+              "WhenOpened": "2024-04-28T05:56:22.365Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "Hello.c",
-              "DocumentMoniker": "C:\\Users\\Ledozvezd\\SibRabbit\\Laba\\Hello.c",
-              "RelativeDocumentMoniker": "Hello.c",
-              "ToolTip": "C:\\Users\\Ledozvezd\\SibRabbit\\Laba\\Hello.c",
-              "RelativeToolTip": "Hello.c",
-              "ViewState": "AQIAAJMAAAAAAAAAAAAAAKUAAAAGAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000423|",
+              "Title": "Hello.cpp",
+              "DocumentMoniker": "C:\\Users\\Ledozvezd\\source\\repos\\Laba\\Hello.cpp",
+              "RelativeDocumentMoniker": "Hello.cpp",
+              "ToolTip": "C:\\Users\\Ledozvezd\\source\\repos\\Laba\\Hello.cpp",
+              "RelativeToolTip": "Hello.cpp",
+              "ViewState": "AQIAADYAAAAAAAAAAAAAAKYAAAAVAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2024-04-16T02:21:19.303Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "main.cpp",
+              "DocumentMoniker": "C:\\Users\\Ledozvezd\\Downloads\\Telegram Desktop\\main.cpp",
+              "RelativeDocumentMoniker": "..\\..\\..\\Downloads\\Telegram Desktop\\main.cpp",
+              "ToolTip": "C:\\Users\\Ledozvezd\\Downloads\\Telegram Desktop\\main.cpp",
+              "RelativeToolTip": "..\\..\\..\\Downloads\\Telegram Desktop\\main.cpp",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAAAQAAAAQAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-04-28T05:51:57.549Z",
               "EditorCaption": ""
             }
           ]

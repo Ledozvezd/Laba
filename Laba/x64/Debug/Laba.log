@@ -1,65 +1,31 @@
-﻿  Hello.c
-C:\Users\Ledozvezd\SibRabbit\Laba\Hello.c(7,1): warning C4005: _CRT_SECURE_NO_WARNINGS: изменение макроопределения
-  C:\Users\Ledozvezd\SibRabbit\Laba\Hello.c(7,1):
+﻿  Hello.cpp
+C:\Users\Ledozvezd\source\repos\Laba\Hello.cpp(7,1): warning C4005: _CRT_SECURE_NO_WARNINGS: изменение макроопределения
+  C:\Users\Ledozvezd\source\repos\Laba\Hello.cpp(7,1):
   "_CRT_SECURE_NO_WARNINGS" ранее объявлен в командной строке
   
-C:\Users\Ledozvezd\SibRabbit\Laba\Hello.c(25,11): warning C4473: "scanf_s": передано недостаточно аргументов для строки формата
-  C:\Users\Ledozvezd\SibRabbit\Laba\Hello.c(25,11):
+C:\Users\Ledozvezd\source\repos\Laba\Hello.cpp(148,11): warning C4473: "scanf_s": передано недостаточно аргументов для строки формата
+  C:\Users\Ledozvezd\source\repos\Laba\Hello.cpp(148,11):
   заполнители и их параметры ожидают переменное число аргументов в количестве 2, но было предоставлено 1
-  C:\Users\Ledozvezd\SibRabbit\Laba\Hello.c(25,11):
+  C:\Users\Ledozvezd\source\repos\Laba\Hello.cpp(148,11):
   отсутствующий вариативный аргумент "2" требуется для строки форматирования "%s"
-  C:\Users\Ledozvezd\SibRabbit\Laba\Hello.c(25,11):
+  C:\Users\Ledozvezd\source\repos\Laba\Hello.cpp(148,11):
   этот аргумент используется в качестве размера буфера
   
-C:\Users\Ledozvezd\SibRabbit\Laba\Hello.c(29,11): warning C4473: "scanf_s": передано недостаточно аргументов для строки формата
-  C:\Users\Ledozvezd\SibRabbit\Laba\Hello.c(29,11):
+C:\Users\Ledozvezd\source\repos\Laba\Hello.cpp(152,11): warning C4473: "scanf_s": передано недостаточно аргументов для строки формата
+  C:\Users\Ledozvezd\source\repos\Laba\Hello.cpp(152,11):
   заполнители и их параметры ожидают переменное число аргументов в количестве 2, но было предоставлено 1
-  C:\Users\Ledozvezd\SibRabbit\Laba\Hello.c(29,11):
+  C:\Users\Ledozvezd\source\repos\Laba\Hello.cpp(152,11):
   отсутствующий вариативный аргумент "2" требуется для строки форматирования "%s"
-  C:\Users\Ledozvezd\SibRabbit\Laba\Hello.c(29,11):
+  C:\Users\Ledozvezd\source\repos\Laba\Hello.cpp(152,11):
   этот аргумент используется в качестве размера буфера
   
-C:\Users\Ledozvezd\SibRabbit\Laba\Hello.c(31,11): warning C4473: "scanf_s": передано недостаточно аргументов для строки формата
-  C:\Users\Ledozvezd\SibRabbit\Laba\Hello.c(31,11):
+C:\Users\Ledozvezd\source\repos\Laba\Hello.cpp(154,11): warning C4473: "scanf_s": передано недостаточно аргументов для строки формата
+  C:\Users\Ledozvezd\source\repos\Laba\Hello.cpp(154,11):
   заполнители и их параметры ожидают переменное число аргументов в количестве 2, но было предоставлено 1
-  C:\Users\Ledozvezd\SibRabbit\Laba\Hello.c(31,11):
+  C:\Users\Ledozvezd\source\repos\Laba\Hello.cpp(154,11):
   отсутствующий вариативный аргумент "2" требуется для строки форматирования "%s"
-  C:\Users\Ledozvezd\SibRabbit\Laba\Hello.c(31,11):
+  C:\Users\Ledozvezd\source\repos\Laba\Hello.cpp(154,11):
   этот аргумент используется в качестве размера буфера
   
-C:\Users\Ledozvezd\SibRabbit\Laba\Hello.c(71,10): warning C4477: "printf": в строке форматирования "%d" требуется аргумент типа "int", но вариативный аргумент "2" имеет тип "int *"
-C:\Users\Ledozvezd\SibRabbit\Laba\Hello.c(71,10): warning C4313: printf: конфликт "%d" в строке формата с аргументом 2 типа "int *"
-C:\Users\Ledozvezd\SibRabbit\Laba\Hello.c(77,17): warning C4047: инициализация: "int" отличается по уровням косвенного обращения от "char [2]"
-C:\Users\Ledozvezd\SibRabbit\Laba\Hello.c(102,11): warning C4477: "printf": в строке форматирования "%d" требуется аргумент типа "int", но вариативный аргумент "2" имеет тип "int *"
-C:\Users\Ledozvezd\SibRabbit\Laba\Hello.c(102,11): warning C4313: printf: конфликт "%d" в строке формата с аргументом 2 типа "int *"
-C:\Users\Ledozvezd\SibRabbit\Laba\Hello.c(115,29): warning C4047: ==: "int [50]" отличается по уровням косвенного обращения от "int"
-C:\Users\Ledozvezd\SibRabbit\Laba\Hello.c(117,11): warning C4477: "printf": в строке форматирования "%d" требуется аргумент типа "int", но вариативный аргумент "2" имеет тип "int *"
-C:\Users\Ledozvezd\SibRabbit\Laba\Hello.c(117,11): warning C4313: printf: конфликт "%d" в строке формата с аргументом 2 типа "int *"
-C:\Users\Ledozvezd\SibRabbit\Laba\Hello.c(148,11): warning C4473: "scanf_s": передано недостаточно аргументов для строки формата
-  C:\Users\Ledozvezd\SibRabbit\Laba\Hello.c(148,11):
-  заполнители и их параметры ожидают переменное число аргументов в количестве 2, но было предоставлено 1
-  C:\Users\Ledozvezd\SibRabbit\Laba\Hello.c(148,11):
-  отсутствующий вариативный аргумент "2" требуется для строки форматирования "%s"
-  C:\Users\Ledozvezd\SibRabbit\Laba\Hello.c(148,11):
-  этот аргумент используется в качестве размера буфера
-  
-C:\Users\Ledozvezd\SibRabbit\Laba\Hello.c(152,11): warning C4473: "scanf_s": передано недостаточно аргументов для строки формата
-  C:\Users\Ledozvezd\SibRabbit\Laba\Hello.c(152,11):
-  заполнители и их параметры ожидают переменное число аргументов в количестве 2, но было предоставлено 1
-  C:\Users\Ledozvezd\SibRabbit\Laba\Hello.c(152,11):
-  отсутствующий вариативный аргумент "2" требуется для строки форматирования "%s"
-  C:\Users\Ledozvezd\SibRabbit\Laba\Hello.c(152,11):
-  этот аргумент используется в качестве размера буфера
-  
-C:\Users\Ledozvezd\SibRabbit\Laba\Hello.c(154,11): warning C4473: "scanf_s": передано недостаточно аргументов для строки формата
-  C:\Users\Ledozvezd\SibRabbit\Laba\Hello.c(154,11):
-  заполнители и их параметры ожидают переменное число аргументов в количестве 2, но было предоставлено 1
-  C:\Users\Ledozvezd\SibRabbit\Laba\Hello.c(154,11):
-  отсутствующий вариативный аргумент "2" требуется для строки форматирования "%s"
-  C:\Users\Ledozvezd\SibRabbit\Laba\Hello.c(154,11):
-  этот аргумент используется в качестве размера буфера
-  
-C:\Users\Ledozvezd\SibRabbit\Laba\Hello.c(166,6): warning C4047: функция: "Student *" отличается по уровням косвенного обращения от "Student (*)[100]"
-C:\Users\Ledozvezd\SibRabbit\Laba\Hello.c(166,6): warning C4024: Add: различные типы для формального и фактического параметров 1
-C:\Users\Ledozvezd\SibRabbit\Laba\Hello.c(165,8): warning C4133: инициализация: несовместимые типы - из "Student *" в "char *"
-  Laba.vcxproj -> C:\Users\Ledozvezd\SibRabbit\Laba\x64\Debug\Laba.exe
+C:\Users\Ledozvezd\source\repos\Laba\Hello.cpp(163,1): warning C4326: возвращаемый тип "main" должен быть "int", а не "void"
+  Laba.vcxproj -> C:\Users\Ledozvezd\source\repos\Laba\x64\Debug\Laba.exe
