@@ -7,7 +7,7 @@ typedef struct list_item {
 } list_item;
 
 void InsSort(list_item** ph, int v) {
-    list_item* q, * p = new list_item;
+    list_item* q, *p = new list_item;
     p->data = v;
     p->prev = p->next = NULL;
     if (*ph == NULL) {
