@@ -1,31 +1,7 @@
 ﻿  Hello.cpp
-C:\Users\Ledozvezd\source\repos\Laba\Hello.cpp(7,1): warning C4005: _CRT_SECURE_NO_WARNINGS: изменение макроопределения
-  C:\Users\Ledozvezd\source\repos\Laba\Hello.cpp(7,1):
+C:\Users\Ledozvezd\SibRabbit\Laba\Hello.cpp(7,1): warning C4005: _CRT_SECURE_NO_WARNINGS: изменение макроопределения
+  C:\Users\Ledozvezd\SibRabbit\Laba\Hello.cpp(7,1):
   "_CRT_SECURE_NO_WARNINGS" ранее объявлен в командной строке
   
-C:\Users\Ledozvezd\source\repos\Laba\Hello.cpp(148,11): warning C4473: "scanf_s": передано недостаточно аргументов для строки формата
-  C:\Users\Ledozvezd\source\repos\Laba\Hello.cpp(148,11):
-  заполнители и их параметры ожидают переменное число аргументов в количестве 2, но было предоставлено 1
-  C:\Users\Ledozvezd\source\repos\Laba\Hello.cpp(148,11):
-  отсутствующий вариативный аргумент "2" требуется для строки форматирования "%s"
-  C:\Users\Ledozvezd\source\repos\Laba\Hello.cpp(148,11):
-  этот аргумент используется в качестве размера буфера
-  
-C:\Users\Ledozvezd\source\repos\Laba\Hello.cpp(152,11): warning C4473: "scanf_s": передано недостаточно аргументов для строки формата
-  C:\Users\Ledozvezd\source\repos\Laba\Hello.cpp(152,11):
-  заполнители и их параметры ожидают переменное число аргументов в количестве 2, но было предоставлено 1
-  C:\Users\Ledozvezd\source\repos\Laba\Hello.cpp(152,11):
-  отсутствующий вариативный аргумент "2" требуется для строки форматирования "%s"
-  C:\Users\Ledozvezd\source\repos\Laba\Hello.cpp(152,11):
-  этот аргумент используется в качестве размера буфера
-  
-C:\Users\Ledozvezd\source\repos\Laba\Hello.cpp(154,11): warning C4473: "scanf_s": передано недостаточно аргументов для строки формата
-  C:\Users\Ledozvezd\source\repos\Laba\Hello.cpp(154,11):
-  заполнители и их параметры ожидают переменное число аргументов в количестве 2, но было предоставлено 1
-  C:\Users\Ledozvezd\source\repos\Laba\Hello.cpp(154,11):
-  отсутствующий вариативный аргумент "2" требуется для строки форматирования "%s"
-  C:\Users\Ledozvezd\source\repos\Laba\Hello.cpp(154,11):
-  этот аргумент используется в качестве размера буфера
-  
-C:\Users\Ledozvezd\source\repos\Laba\Hello.cpp(163,1): warning C4326: возвращаемый тип "main" должен быть "int", а не "void"
-  Laba.vcxproj -> C:\Users\Ledozvezd\source\repos\Laba\x64\Debug\Laba.exe
+C:\Users\Ledozvezd\SibRabbit\Laba\Hello.cpp(163,1): warning C4326: возвращаемый тип "main" должен быть "int", а не "void"
+  Laba.vcxproj -> C:\Users\Ledozvezd\SibRabbit\Laba\x64\Debug\Laba.exe

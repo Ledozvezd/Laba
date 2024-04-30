@@ -145,13 +145,13 @@ void ChangeParam(struct Student * student, int index)
 	if (index < amount)
 	{
 		printf("\nEnter Surname:");
-		scanf_s("%s", &student[index].surname);
+		scanf("%s", &student[index].surname);
 		printf("\nEnter Book Name:");
 		scanf_s("%d", &student[index].bookNumber);
 		printf("\nEnter Faculti:");
-		scanf_s("%s", &student[index].faculti);
+		scanf("%s", &student[index].faculti);
 		printf("\nEnter Group:");
-		scanf_s("%s", &student[index].group);
+		scanf("%s", &student[index].group);
 	}
 	else
 	{
@@ -162,8 +162,18 @@ void ChangeParam(struct Student * student, int index)
 void main(void)
 {
 	struct Student students[100];
+	//char* p[];
+	char surname[10] = "uu";
+	//p = &surname;
 	//char* prt = students;
-	Add(students);
-	ShowTable(students);
+	for (int i = 0; i < 2; i++)
+	{
+		Add(students);
+	}
+	//Add(students);
+	//ShowTable(students);
+	//ChangeParam(students, 0);
+	//ShowTable(students);
+	FindParam_char(students, surname);
 
 }
