@@ -40,16 +40,36 @@ void PrintList(list_item* head) {
 }
 
 int main() {
-    list_item* head = NULL; // Устанавливаем голову списка в NULL
+    //list_item* head = NULL; // Устанавливаем голову списка в NULL
 
-    // Вставляем элементы в список
-    InsSort(&head, 10);
-    InsSort(&head, 20);
-    InsSort(&head, 5);
-    InsSort(&head, 30);
+    list_item* head1 = NULL; // Устанавливаем голову первого списка в NULL
+    list_item* head2 = NULL; // Устанавливаем голову второго списка в NULL
+
+    // Вставляем элементы в первый список
+    InsSort(&head1, 10);
+    InsSort(&head1, 20);
+    InsSort(&head1, 5);
+
+    // Вставляем элементы во второй список
+    InsSort(&head2, 4);
+    InsSort(&head2, 8);
+    InsSort(&head2, 18);
 
     // Выводим содержимое списка
-    PrintList(head);
+    PrintList(head1);
+    PrintList(head2);
 
+    //list_item* curent = NULL;
+    list_item* q = head1;
+    list_item* p = head2;
+    while (q != NULL || p != NULL)
+    {
+        InsSort(&head1, p->data);
+        q = q->next;
+        p = p->next;
+    }
+
+    PrintList(head1);
+    //list_item = 
     return 0;
 }
