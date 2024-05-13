@@ -1,4 +1,3 @@
-//Visual Studio 2015
 #include <iostream>
 #include <vector>
 #include <string>
@@ -34,9 +33,11 @@ void print(vector <Domino> chained) {
 
 void dominoChains(vector <Domino>& chain, vector <Domino> vector) {
     if (vector.empty()) return;
-    for (int i = 0; i < vector.size(); ++i) {
+    for (int i = 0; i < vector.size(); ++i) 
+    {
         Domino dom = vector.at(i);
-        if (canAppend(dom, chain)) {
+        if (canAppend(dom, chain)) 
+        {
             chain.push_back(dom);
             print(chain);
             Domino saved = vector.at(i);
@@ -46,9 +47,11 @@ void dominoChains(vector <Domino>& chain, vector <Domino> vector) {
             vector.insert(vector.begin() + i, saved);
             chain.erase(chain.end() - 1);
         }
-        else {
+        else 
+        {
             dom = dom.flip();
-            if (canAppend(dom, chain)) {
+            if (canAppend(dom, chain)) 
+            {
                 chain.push_back(dom);
                 print(chain);
                 Domino saved = vector.at(i);
@@ -62,7 +65,8 @@ void dominoChains(vector <Domino>& chain, vector <Domino> vector) {
     }
 }
 
-int main() {
+int main() 
+{
     vector <Domino> list;
     Domino* d = new Domino(3, 4);
     list.push_back(*d);
@@ -80,6 +84,6 @@ int main() {
     vector <Domino> chained;
     dominoChains(chained, list);
 
-    cin.get(); 
     return 0;
 }
+
