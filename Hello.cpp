@@ -70,15 +70,15 @@ int main()
     vector <Domino> list;
     Domino* d = new Domino(3, 4);
     list.push_back(*d);
+    d = new Domino(6, 1);
+    list.push_back(*d);
     d = new Domino(5, 6);
     list.push_back(*d);
-    d = new Domino(1, 4);
+    d = new Domino(4, 5);
     list.push_back(*d);
-    d = new Domino(1, 6);
+    d = new Domino(3, 4);
     list.push_back(*d);
-    d = new Domino(2, 2);
-    list.push_back(*d);
-    d = new Domino(2, 4);
+    d = new Domino(2, 3);
     list.push_back(*d);
 
     vector <Domino> chained;
