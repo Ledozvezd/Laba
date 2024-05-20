@@ -1,2 +1,3 @@
-﻿  Hello.c
-  Laba.vcxproj -> C:\Users\Ledozvezd\SibRabbit\Laba\x64\Debug\Laba.exe
+﻿  Hello.cpp
+C:\Users\Ledozvezd\source\repos\Laba\Hello.cpp(87,1): warning C4326: возвращаемый тип "main" должен быть "int", а не "void"
+  Laba.vcxproj -> C:\Users\Ledozvezd\source\repos\Laba\x64\Debug\Laba.exe
