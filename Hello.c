@@ -2,68 +2,128 @@
 #include <locale.h>
 #include <string.h>
 
-struct man2 {
-
-	char name[20];
-
-	char* zodiak;
-
-	struct man2* next;
-
-} 
-C2[3] = {
-
-{"Петров","Весы",NULL },
-
-{"Сидоров","Дева",&C2[0] },
-
-{"Иванов","Козерог",&C2[1] } };
-
-void F2() {
-	setlocale(LC_ALL, "Rus");
-	char c1, c2, c3, c4;
-
-	c1 = C2[0].name[2]; //т из Иванов
-	c2 = C2[1].zodiak[3]; //а из Дева
-	c3 = C2[2].next->name[3]; //о Из Сидоров
-	c4 = C2[2].next->next->zodiak[1]; //е из Весы
-
-	printf("%c \n", c1);
-	printf("%c \n", c2);
-	printf("%c \n", c3);
-	printf("%c \n", c4);
-}
-
-struct tree3 {
-
-	int vv;
-
-	struct tree3* l, * r;
-}
-
-A3 = { 1,NULL,NULL }, 
-B3 = { 2,NULL,NULL },
-C3 = { 3, &A3, &B3 }, 
-D3 = { 4, &C3, NULL },
-
-* p3 = &D3;
-
-void F3() 
-{ 
-	int i1, i2, i3, i4;  
-	i1 = A3.vv; //1
-	i2 = D3.l->vv; //3
-	i3 = p3->l->r->vv; //2
-	i4 = p3->vv; //4
-
-	printf("%d \n", i1);
-	printf("%d \n", i2);
-	printf("%d \n", i3);
-	printf("%d \n", i4);
-}
-void main()
+struct list 
 {
-	F2();
-	printf("\n");
-	F3();
+    struct list* next;                             // Указатель на следующий
+    void* pdata;
+};                                       // Указатель на данные
+
+//----- Итератор: для каждого элемента списка
+
+void ForEach(struct list* pv, void (*pf)(void*)) {
+
+    for (; pv != NULL; pv = pv->next)
+
+        (*pf)(pv->pdata);
+
+}
+
+//----- Итератор: поиск первого в списке по условию
+
+void* FirstThat(struct list* pv, int (*pf)(void*)) {
+
+    for (; pv != NULL; pv = pv->next)
+
+        if ((*pf)(pv->pdata)) return pv->pdata;
+
+    return NULL;
+}
+
+//----- Итератор: поиск минимального в списке
+
+void* FindMin(struct list* pv, int (*pf)(void*, void*))
+
+{
+    struct list* pmin;
+
+    for (pmin = pv; pv != NULL; pv = pv->next)
+
+        if ((*pf)(pv->pdata, pmin->pdata) < 0) pmin = pv;
+
+    return pmin;
+}
+
+//----- Примеры использования итератора ------------------
+
+//----- Функция вывода строки
+
+void print(void* p) { puts((char*)p); }
+
+//----- Функция проверки : длины строки >5
+
+int bigstr(void* p) { return strlen((char*)p) > 5; }
+
+//----- Функция сравнения строк по длине
+
+int scmp(void* p1, void* p2)
+
+{
+    return strlen((char*)p1) - strlen((char*)p2);
+}
+
+//----- Вызов итераторов для статического списка,
+
+// содержащего указатели на строки
+
+struct list a1 = { NULL,"aaaa" }, a2 = { &a1,"bbbbbb" }, a3 = { &a2,"ccccc" }, * PH = &a3;
+
+
+
+//----- Итератор сортировки для массива указателей
+
+void Sort(void** pp, int (*pf)(void*, void*))
+
+{
+    int i, k;
+
+    do
+
+        for (k = 0, i = 1; pp[i] != NULL; i++)
+
+            if ((*pf)(pp[i - 1], pp[i]) >= 0)                   // вызов функции сравнения
+
+            {
+                void* q;                                          // перестановка указателей
+
+                k++; q = pp[i - 1]; pp[i - 1] = pp[i]; pp[i] = q;
+
+            }
+
+    while (k);
+}
+
+// Пример вызова итератора сортировки для массива
+
+// указателей на целые переменные
+
+int cmp_int(void* p1, void* p2)
+
+{
+    return *(int*)p1 - *(int*)p2;
+}
+
+int b1 = 5, b2 = 6, b3 = 3, b4 = 2;
+
+void* PP[] = { &b1, &b2, &b3, &b4, NULL };
+
+void main()
+
+{
+    char* pp;
+
+    ForEach(PH, print);
+
+    pp = (char*)FirstThat(PH, bigstr);
+
+    if (pp != NULL) puts(pp);
+
+    pp = (char*)FindMin(PH, scmp);
+
+    if (pp != NULL) puts(pp);
+
+    Sort(PP, cmp_int);
+
+    for (int i = 0; PP[i] != NULL; i++) printf("%d ", *(int*)PP[i]);
+
+    puts("");
 }
