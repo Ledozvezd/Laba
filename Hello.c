@@ -1,69 +1,70 @@
 #include <stdio.h>
-#include <locale.h>
+#include <stdlib.h>
 #include <string.h>
 
-struct man2 {
-
-	char name[20];
-
-	char* zodiak;
-
-	struct man2* next;
-
-} 
-C2[3] = {
-
-{"Петров","Весы",NULL },
-
-{"Сидоров","Дева",&C2[0] },
-
-{"Иванов","Козерог",&C2[1] } };
-
-void F2() {
-	setlocale(LC_ALL, "Rus");
-	char c1, c2, c3, c4;
-
-	c1 = C2[0].name[2]; //т из Иванов
-	c2 = C2[1].zodiak[3]; //а из Дева
-	c3 = C2[2].next->name[3]; //о Из Сидоров
-	c4 = C2[2].next->next->zodiak[1]; //е из Весы
-
-	printf("%c \n", c1);
-	printf("%c \n", c2);
-	printf("%c \n", c3);
-	printf("%c \n", c4);
+void neg(unsigned char in[], int n)
+{
+    int i, carry;                                           // Разряд переноса
+    unsigned w;                              // Рабочая переменная для сложения двух байтов
+    for (i = 0; i < n; i++) in[i] = ~in[i];      // Инвертированин всех разрядов
+    for (i = 0, carry = 1; i < n; i++) {         // Добавление 1 (инкремент) с первоначальной
+        in[i] = w = in[i] + carry;          // установкой переноса в 1
+        carry = (w & 0x0100) >> 8;
+    }
 }
 
-struct tree3 {
-
-	int vv;
-
-	struct tree3* l, * r;
+void add(unsigned char out[], unsigned char in1[], unsigned char in2[], int n)
+{
+    int i, carry;                                 // Разряд переноса
+    unsigned w;                              // Рабочая переменная для сложения двух байтов
+    for (i = 0, carry = 0; i < n; i++) {
+        out[i] = w = in1[i] + in2[i] + carry;
+        carry = (w & 0x0100) >> 8;    // Разряд переноса сдвинуть вправо на 8
+    }
+}
+//------Сдвиг целых произвольной разрядности
+void lshift(unsigned char in[], int n)
+{
+    int carry;                                            // Разряд переноса
+    int i, z;
+    for (carry = 0, i = 0; i < n; i++) {
+        z = (in[i] & 0x80) >> 7;                         // Выделить старший разряд (перенос)
+        in[i] <<= 1;                                      // Сдвинуть влево и установить
+        in[i] |= carry;                                     // старый перенос в младший разряд
+        carry = z;                                        // Запомнить новый перенос
+    }
+}
+void rshift(unsigned char in[], int n)                      // Сдвиг арифметический
+{
+    int carry = ((in[n - 1] & 0x80) != 0);   // Разряд переноса = копия знакового
+    int i, z;
+    for (i = n - 1; i >= 0; i--) {
+        z = in[i] & 1;                                    // Выделить младший разряд (перенос)
+        in[i] >>= 1;                                      // Сдвинуть вправо и установить
+        in[i] |= carry << 7;                             // старый перенос в старший разряд
+        carry = z;                                        // Запомнить новый перенос
+    }
 }
 
-A3 = { 1,NULL,NULL }, 
-B3 = { 2,NULL,NULL },
-C3 = { 3, &A3, &B3 }, 
-D3 = { 4, &C3, NULL },
-
-* p3 = &D3;
-
-void F3() 
-{ 
-	int i1, i2, i3, i4;  
-	i1 = A3.vv; //1
-	i2 = D3.l->vv; //3
-	i3 = p3->l->r->vv; //2
-	i4 = p3->vv; //4
-
-	printf("%d \n", i1);
-	printf("%d \n", i2);
-	printf("%d \n", i3);
-	printf("%d \n", i4);
+void mul(unsigned char out[], unsigned char aa[], unsigned char bb[], int n)
+{
+    int i, s1 = 0, s2 = 0;                                               // Отрицательные числа - прямой код
+    if (aa[n - 1] & 0x80) { neg(aa, n); s1 = 1; }
+    if (bb[n - 1] & 0x80) { neg(bb, n); s2 = 1; }
+    for (i = 0; i < n; i++) out[i] = 0;
+    for (i = 0; i < n * 8; i++) {                                    // Цикл по количеству разрядов
+        if (bb[0] & 1)                                               // Разряд множителя равен 1
+            add(out, out, aa, n);                                   // Добавить множимое к произведению
+        lshift(aa, n);                                                  // Множимое - влево
+        rshift(bb, n);                                                  // Множитель - вправо
+    }
+    if (s1 != s2) neg(out, n);                                        // Знаки не совпадают - доп. код
+    printf("%s", out);
 }
+
 void main()
 {
-	F2();
-	printf("\n");
-	F3();
+    long a = 1234, b = 4567, c;
+    mul((unsigned char*)&c, (unsigned char*)&a, (unsigned char*)&b, sizeof(long));
+    printf("%ld\n", c);
 }
