@@ -1,3 +1,1 @@
-﻿  Hello.c
-C:\Users\Ledozvezd\source\repos\Laba\Hello.c(61,30): warning C4267: return: преобразование из "size_t" в "int"; возможна потеря данных
-  Laba.vcxproj -> C:\Users\Ledozvezd\source\repos\Laba\x64\Debug\Laba.exe
+﻿  Laba.vcxproj -> C:\Users\Ledozvezd\source\repos\Laba\x64\Debug\Laba.exe
