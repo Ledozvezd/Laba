@@ -1,1 +1,10 @@
-﻿  Laba.vcxproj -> C:\Users\Ledozvezd\source\repos\Laba\x64\Debug\Laba.exe
+﻿  Hello.c
+C:\Users\Ledozvezd\source\repos\Laba\Hello.c(12,28): warning C4047: инициализация: "void *" отличается по уровням косвенного обращения от "int"
+C:\Users\Ledozvezd\source\repos\Laba\Hello.c(12,50): warning C4047: инициализация: "void *" отличается по уровням косвенного обращения от "int"
+C:\Users\Ledozvezd\source\repos\Laba\Hello.c(12,73): warning C4047: инициализация: "void *" отличается по уровням косвенного обращения от "int"
+C:\Users\Ledozvezd\source\repos\Laba\Hello.c(46,16): warning C4477: "printf": в строке форматирования "%d" требуется аргумент типа "int", но вариативный аргумент "1" имеет тип "void *"
+C:\Users\Ledozvezd\source\repos\Laba\Hello.c(46,16): warning C4313: printf: конфликт "%d" в строке формата с аргументом 1 типа "void *"
+C:\Users\Ledozvezd\source\repos\Laba\Hello.c(76,33): warning C4267: return: преобразование из "size_t" в "int"; возможна потеря данных
+C:\Users\Ledozvezd\source\repos\Laba\Hello.c(141,8): warning C4133: =: несовместимые типы - из "list *" в "char *"
+C:\Users\Ledozvezd\source\repos\Laba\Hello.c(142,13): warning C4133: функция: несовместимые типы - из "char *" в "list *"
+  Laba.vcxproj -> C:\Users\Ledozvezd\source\repos\Laba\x64\Debug\Laba.exe
